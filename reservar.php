@@ -41,7 +41,8 @@ function makestring($array)
     echo " <input type='submit' name='boton' value='reservar' />";
     echo "</form>";
     echo " <p><a href='exito.php'>Volver atr&aacute;s</a></p>";
-    
+   
+    // este formulario sirve para destruir la sesión y desconectarse
     echo "<form name= 'form1' action='desconexion.php' method='POST' >
                     <input type='submit' name='salir' value='salir' />
                 </form>";
