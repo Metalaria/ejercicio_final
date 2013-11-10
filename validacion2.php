@@ -10,7 +10,7 @@ $queUser = mysqli_query( $con,"select usuario from usuarios where password = '$p
 $fila = mysqli_fetch_assoc($queUser);
 
 $contra = $fila['usuario'];
-
+// si los datos son correctos redirige a exito.php
 if ($user == $contra) {
     header('location:exito.php');
 } else {
