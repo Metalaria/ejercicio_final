@@ -9,7 +9,7 @@ $con = new mysqli('localhost', 'root', '', 'prueba');
 
 $busca = mysqli_query($con, " SELECT ejercicio FROM ejercicios WHERE reservado= 's'"); 
     while ($f =  mysqli_fetch_array($busca)){
-        echo $f ['ejercicio']. '&nbsp;'. '&nbsp;'."<br/>" ; 
+        echo $f ['ejercicio']."<br/>" ; 
     }
     echo " <p><a href='exito.php'>volver atr&aacute;s</a></p>";
         
