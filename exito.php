@@ -14,7 +14,8 @@
             header("refresh: 3; url= index.php");   
         } else{
             echo " <p><a href='reservar.php'>Reservar ejercicio</a></p>";
-                
+            
+            // este formulario sirve para destruir la sesión y desconectarse
               echo"  <form name= 'form1' action='desconexion.php' method='POST' >
                     <input type='submit' name='salir' value='salir' />
                 </form>";
