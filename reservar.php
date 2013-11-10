@@ -6,10 +6,6 @@ if (!isset($_SESSION['id_user'])) {
     header("refresh: 3; url= index.php");   
 } else {
     $con = new mysqli('localhost', 'root', '', 'prueba');
-$busqueda =""; 
-
-$all="";
-
 
 // funcion para convertir el contenido de un array en un string
 function makestring($array)
@@ -46,9 +42,5 @@ function makestring($array)
     echo "<form name= 'form1' action='desconexion.php' method='POST' >
                     <input type='submit' name='salir' value='salir' />
                 </form>";
-    
-
 }
-
-
 ?>
