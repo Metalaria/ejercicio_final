@@ -15,7 +15,7 @@ if(empty($_REQUEST["reservar_ejercicio"])){
 if(isset($_REQUEST["reservar_ejercicio"])) {
     $q_res = "update ejercicios set reservado = 's' where ejercicio in ('" . implode("','", $_POST['reservar_ejercicio']) . "')";
     mysqli_query($con, $q_res);
-    echo "ejercicio reservado con éxito";
+    echo "ejercicio reservado con &eacute;xito";
     header('refresh: 3; url= exito.php');
 }
 
