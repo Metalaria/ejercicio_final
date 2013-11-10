@@ -35,8 +35,8 @@ function makestring($array)
     $busca = mysqli_query($con, "select ejercicio from ejercicios where reservado='n' ");
     echo "<form action='reservado.php' method='post' enctype='multipart/form-data'>";
     while ($f =  mysqli_fetch_array($busca)){
-        $user=makestring($f);
-        echo "<input type='checkbox' name='reservar_ejercicio[]' value='$user' />$user<br/>";
+        $ejercicio=makestring($f);
+        echo "<input type='checkbox' name='reservar_ejercicio[]' value='$ejercicio' />$ejercicio<br/>";
     }
     echo " <input type='submit' name='boton' value='reservar' />";
     echo "</form>";
