@@ -3,18 +3,15 @@
 $con = new mysqli('localhost', 'root', '', 'prueba');
 //recibe los datos y hace la consulta
 $user = $_POST['user1'];
-
 $pass = $_POST['pass1'];
-
-
+//realiza la consulta para realizar la conexion
 $queUser = mysqli_query( $con,"select usuario from usuarios where password = '$pass'");
 
 $fila = mysqli_fetch_assoc($queUser);
 
 $contra = $fila['usuario'];
 
-if ($user === $contra) {
-    
+if ($user == $contra) {
     header('location:exito.php');
 } else {
     echo "<br/>"."usuario  o contrase&ntilde;a incorrecta  <br/>";
