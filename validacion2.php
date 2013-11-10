@@ -19,7 +19,7 @@ if ($user === $contra) {
 } else {
     echo "<br/>"."usuario  o contrase&ntilde;a incorrecta  <br/>";
     echo "Redirigiendo a la p&aacute;gina principal ...<br/>";
-   // header('refresh: 3; url= index.php');
+    header('refresh: 3; url= index.php');
 }
 
 session_start();
