@@ -31,7 +31,7 @@ function makestring($array)
   
   return $outval;
   }
-    
+    // El blucle genera un formulario con cada uno de los valores que devuelve la consulta
     $busca = mysqli_query($con, "select ejercicio from ejercicios where reservado='n' ");
     echo "<form action='reservado.php' method='post' enctype='multipart/form-data'>";
     while ($f =  mysqli_fetch_array($busca)){
