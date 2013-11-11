@@ -6,7 +6,7 @@ if (!isset($_SESSION['id_user'])) {
         } else{
 
 $con = new mysqli('localhost', 'root', '', 'prueba');
-
+// El blucle imprime cada uno de los resultados que devuelve la consulta
 $busca = mysqli_query($con, " SELECT ejercicio FROM ejercicios WHERE reservado= 's'"); 
     while ($f =  mysqli_fetch_array($busca)){
         echo $f ['ejercicio']."<br/>" ; 
