@@ -11,7 +11,7 @@
            
          </div>
         <?php
-            
+            // el fomulario solo aparece cuando se ha hecho clic sobre el enlace de arriba
          if (isset($_GET['opc']) and ($_GET['opc']==1)){
             echo "<form name= 'form2' action='validacion2.php' method='POST' >
                     Usuario: <input type='text' name='user1' id= 'user1' /> 
